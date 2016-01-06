@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+  .btn{
+ 
+  	width:100px;
+ 	margin-left:100px;
+  	height:50px;
+  }
+</style>
+</head>
+<body>
+<button id="btn" class="btn">确认登录</button>
+<script src="./js/common/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").on("click",function(){
+			 $.ajax({
+	             type: "GET",
+	             url: "http://open.weixin.qq.com/connect/oauth2/authorize?appid=wx00d6ab0d5f9b2325&redirect_uri=http%3a%2f%2fcxprogram1206.imwork.net%2fwechat%2fsuccess.html&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect",
+	             dataType: "jsonp",
+	             success:function(){}
+	         });
+		});
+	});
+
+</script>
+</body>
+</html>
