@@ -36,7 +36,7 @@ public class HonBaoServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("进入抢红包环节");
+		System.out.println("进入抢红包");
 		
 		//是否得到红包
 		Boolean isGet=false;
